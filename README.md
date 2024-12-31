@@ -38,15 +38,16 @@ Purpose: Add a new item to the DynamoDB table.
 Request Format: Payload must be in JSON format, including a unique id and other attributes.
 Example:
 
-curl -X POST https://<your-api-id>.execute-api.<region>.amazonaws.com \
+curl -X POST https://your-api-id.execute-api.region.amazonaws.com \
 -H "Content-Type: application/json" \
 -d '{"id": "1","name": "Bruce Wayne","age": 30}'
 
 ### GET Request
 Purpose: Retrieve all items stored in the DynamoDB table.
+
 Example:
 
-curl -X GET https://<your-api-id>.execute-api.<region>.amazonaws.com
+curl -X GET https://your-api-id.execute-api.region.amazonaws.com
 
 Expected Response:
 
