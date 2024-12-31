@@ -18,12 +18,15 @@ This project demonstrates the deployment of a serverless application using AWS s
 ## Deployment Instructions
 1. Clone the Repository
 git clone https://github.com/your-username/AWS-Serverless-Project.git
+
 cd AWS-Serverless-Project
 
 2. Initialize Terraform
+
 terraform init
 
 3. Apply Terraform Configuration
+
 terraform apply
 
 Terraform will output the API Gateway endpoint upon successful deployment.
@@ -31,8 +34,10 @@ Terraform will output the API Gateway endpoint upon successful deployment.
 ## Usage
 ### POST Request
 Purpose: Add a new item to the DynamoDB table.
+
 Request Format: Payload must be in JSON format, including a unique id and other attributes.
 Example:
+
 curl -X POST https://<your-api-id>.execute-api.<region>.amazonaws.com \
 -H "Content-Type: application/json" \
 -d '{"id": "1","name": "Bruce Wayne","age": 30}'
@@ -40,9 +45,11 @@ curl -X POST https://<your-api-id>.execute-api.<region>.amazonaws.com \
 ### GET Request
 Purpose: Retrieve all items stored in the DynamoDB table.
 Example:
+
 curl -X GET https://<your-api-id>.execute-api.<region>.amazonaws.com
 
 Expected Response:
+
 [{"id": "1","name": "Bruce Wayne","age": 30}]
 
 ## Project Architecture
