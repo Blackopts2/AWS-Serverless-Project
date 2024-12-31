@@ -1,0 +1,12 @@
+# Terraform files to ignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+
+# Lambda function zip file
+lambda/lambda.zip
+
+# OS or editor-specific files
+.DS_Store
+.vscode/
