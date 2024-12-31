@@ -17,6 +17,7 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 ## Deployment Instructions
 1. Clone the Repository
+
 git clone https://github.com/your-username/AWS-Serverless-Project.git
 
 cd AWS-Serverless-Project
