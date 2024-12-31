@@ -36,6 +36,7 @@ Terraform will output the API Gateway endpoint upon successful deployment.
 Purpose: Add a new item to the DynamoDB table.
 
 Request Format: Payload must be in JSON format, including a unique id and other attributes.
+
 Example:
 
 curl -X POST https://your-api-id.execute-api.region.amazonaws.com \
