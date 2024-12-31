@@ -17,8 +17,8 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 ## Deployment Instructions
 1. Clone the Repository
-git clone https://github.com/your-username/serverless-app.git
-cd serverless-app
+git clone https://github.com/your-username/AWS-Serverless-Project.git
+cd AWS-Serverless-Project
 
 2. Initialize Terraform
 terraform init
@@ -35,11 +35,7 @@ Request Format: Payload must be in JSON format, including a unique id and other 
 Example:
 curl -X POST https://<your-api-id>.execute-api.<region>.amazonaws.com \
 -H "Content-Type: application/json" \
--d '{  
-  "id": "1",
-  "name": "Bruce Wayne",
-  "age": 30
-}'
+-d '{"id": "1","name": "Bruce Wayne","age": 30}'
 
 ### GET Request
 Purpose: Retrieve all items stored in the DynamoDB table.
@@ -47,13 +43,7 @@ Example:
 curl -X GET https://<your-api-id>.execute-api.<region>.amazonaws.com
 
 Expected Response:
-[
-  {    
-    "id": "1",
-    "name": "Bruce Wayne",
-    "age": 30
-  }
-]
+[{"id": "1","name": "Bruce Wayne","age": 30}]
 
 ## Project Architecture
 - Lambda Function: Handles GET and POST requests.
