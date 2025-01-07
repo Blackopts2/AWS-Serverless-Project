@@ -54,7 +54,7 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 **Example**:
 
-    ``` bash
+    ```
     curl -X POST https://your-api-id.execute-api.region.amazonaws.com -H "Content-Type: application/json" -d '{"id": "1","name": "Bruce Wayne","age": 30}'
     ```
     
@@ -63,13 +63,13 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 **Example**:
 
-    ``` bash
+    ```
     curl -X GET https://your-api-id.execute-api.region.amazonaws.com
     ```
 
 **Expected Response**:
 
-    ``` bash
+    ```
     [{"id": "1","name": "Bruce Wayne","age": 30}]
     ```
 
