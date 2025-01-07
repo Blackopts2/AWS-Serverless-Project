@@ -53,18 +53,18 @@ This project demonstrates the deployment of a serverless application using AWS s
 **Request Format**: Payload must be in JSON format, including a unique id and other attributes.
 
 **Example**:
-    ```bash
+    ``` bash
     curl -X POST https://your-api-id.execute-api.region.amazonaws.com -H "Content-Type: application/json" -d '{"id": "1","name": "Bruce Wayne","age": 30}'
     ```
 ### GET Request
 **Purpose**: Retrieve all items stored in the DynamoDB table.
 
 **Example**:
-    ```bash
+    ``` bash
     curl -X GET https://your-api-id.execute-api.region.amazonaws.com
     ```
 **Expected Response**:
-    ```bash
+    ``` bash
     [{"id": "1","name": "Bruce Wayne","age": 30}]
     ```
 ## Improvements and Next Steps
