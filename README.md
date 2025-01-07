@@ -54,7 +54,6 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 **Example**:
 
-    //
     curl -X POST https://your-api-id.execute-api.region.amazonaws.com -H "Content-Type: application/json" -d '{"id": "1","name": "Bruce Wayne","age": 30}'
 
 ### GET Request
@@ -62,12 +61,10 @@ This project demonstrates the deployment of a serverless application using AWS s
 
 **Example**:
 
-    //
     curl -X GET https://your-api-id.execute-api.region.amazonaws.com
 
 **Expected Response**:
 
-    //
     [{"id": "1","name": "Bruce Wayne","age": 30}]
 
 ## Improvements and Next Steps
